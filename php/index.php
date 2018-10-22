@@ -62,7 +62,7 @@ $resul = mysqli_query("select*from alumnos", $link);
                     </thead>
 
                         <?php
-while ($fila = mysql_fetch_array($resul)) {
+while ($fila = mysqli_fetch_array($resul)) {
     echo '<tr>
         <td>' . $fila['codigo'] . '</td>
         <td>' . $fila['nombres'] . '</td>
