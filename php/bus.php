@@ -4,7 +4,7 @@
 
 	$sql="SELECT codigo,nombres,telefono,direccion 
 						from alumnos";
-				$result=mysqli_query($sql,$conexion);
+				$result=mysqli_query($conexion,$sql);
 
  ?>
 <br><br>
