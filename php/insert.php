@@ -13,7 +13,7 @@ if (isset($_POST['guardar'])) {
     
     //header("Location:index.php");
     
-    echo ' <script language="javascript">alert("Alumno registrado con éxito");window.location("index.php")</script> ';
+    echo ' <script language="javascript">alert("Alumno registrado con éxito");window.location.replace("index.php")</script> ';
     
 } else {
     echo ("Presiona el boton guardar");
