@@ -1,17 +1,18 @@
 <?php
 function conectarse()
 {
-    //if (!($link = mysqli_connect("localhost", "root", "root"))) {
-        //echo "Error conectandose a la base de datos";
-        //exit();
-    //}
-    //if (!mysqli_select_db("lista_alum", $link)) {
-        //echo "Error seleccionando la base de datos.";
-        //exit();
-
-    //}
-    //return $link;
+    $link=mysqli_connect("localhost","root","root","lista_alum");
+    if (mysqli_connect_errno()){ 
+        echo "Failed to connect to MySQL :" . mysqli_connect_error();
+    }
+    
+    return $link;
+    }
+?>
+    
+    
+    
+    
     
 
-}
-?>
+
