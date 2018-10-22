@@ -1,7 +1,7 @@
 <?php
 include "conex.php";
 $link  = conectarse();
-$resul = mysql_query("select*from alumnos", $link);
+$resul = mysqli_query("select*from alumnos", $link);
 ?>
 <!DOCTYPE html>
 <html lang="en">
