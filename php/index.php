@@ -1,8 +1,8 @@
 <?php
-phpinfo();
+//phpinfo();
 include "conex.php";
 $link  = conectarse();
-$resul = mysqli_query("select*from alumnos", $link);
+$resul = mysqli_query($link,"select*from alumnos");
 ?>
 <!DOCTYPE html>
 <html lang="en">
