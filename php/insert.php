@@ -10,9 +10,11 @@ $link = conectarse();
 if (isset($_POST['guardar'])) {
 
     mysqli_query($link,"INSERT INTO alumnos(codigo,nombres,telefono,direccion)values('$cod','$nombre','$tel','$dir')");
-
-    echo ' <script language="javascript">alert("Alumno registrado con éxito");</script> ';
-    header("Location:index.php");
+    
+    //header("Location:index.php");
+    
+    echo ' <script language="javascript">alert("Alumno registrado con éxito");window.location("index.php")</script> ';
+    
 } else {
     echo ("Presiona el boton guardar");
 } 
