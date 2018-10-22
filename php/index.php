@@ -1,4 +1,5 @@
 <?php
+phpinfo();
 include "conex.php";
 $link  = conectarse();
 $resul = mysqli_query("select*from alumnos", $link);
