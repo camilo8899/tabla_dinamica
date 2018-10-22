@@ -6,7 +6,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
     volumes:
-      - ./mysql:/docker-entrypoint-lista_alumdb.d/
+      - ./mysql:/docker-entrypoint-initdb.d/
     ports:
       - "3306:3306"    
     networks:
