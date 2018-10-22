@@ -105,7 +105,7 @@ while ($fila = mysqli_fetch_array($resul)) {
                     <h3>
                         Mantenimiento de alumnos
                     </h3>
-                    <form action="insertar.php" id="formulario" method="POST" name="formulario">
+                    <form action="insert.php" id="formulario" method="POST" name="formulario">
                         <div class="form-group">
                             <label for="nombre">
                                 Codigo
